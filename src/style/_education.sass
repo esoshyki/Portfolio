@@ -23,19 +23,22 @@ section.education
                 margin-bottom: -5px
                 transition-duration: 0.4s
 
-    .education__information 
-        margin: 0 20px 20px 20px
-        margin-top: -300px
+    .education__information
+        overflow: hidden
+        
+        .education__information__container
+            margin: 0 20px 20px 20px
+            margin-top: -300px
+        
+            ._item 
+                +flex(column, center, baseline)
+                margin-bottom: 30px
 
-        ._item 
-            +flex(column, center, baseline)
-            margin-bottom: 30px
+                ._institution
+                    +font-pick($sea, 20px, #8ABA9A, 400)
+                    user-select: none
+                    margin-bottom: 10px
 
-            ._institution
-                +font-pick($sea, 20px, #8ABA9A, 400)
-                user-select: none
-                margin-bottom: 10px
-
-            ._years 
-                +font-pick($sea, 20px, #42D4AD, 400)
-                user-select: none
+                ._years 
+                    +font-pick($sea, 20px, #42D4AD, 400)
+                    user-select: none

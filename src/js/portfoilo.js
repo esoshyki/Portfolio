@@ -1,5 +1,6 @@
 import changeColor from './header_color'
 import slider from './slider'
+import project_slide from './projects_slide';
 
 export default class Portfolio {
     constructor() {
@@ -9,6 +10,7 @@ export default class Portfolio {
     start() {
         changeColor()
         slider()
+        project_slide()
     }
 
 }

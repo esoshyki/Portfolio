@@ -1,0 +1,63 @@
+section.projects   
+    border: 1px solid #42D4AD
+    margin: 10px 0
+    width: 100%
+    +grid-col(64px 1fr 64px)
+    ._left_slider 
+        display: inline-block
+        width: 64px
+        height: 100%
+        float: left
+        margin-top: auto
+        content: url('./assets/icons/left-arrow.svg')
+        border-right: 1px solid #42D4AD
+        &:hover
+            background: #42D4AD
+    ._right_slider 
+        display: inline-block
+        width: 64px
+        height: 100%
+        float: right
+        margin-top: auto
+        content: url('./assets/icons/right-arrow.svg')
+        border-left: 1px solid #42D4AD
+        &:hover
+            background: #42D4AD
+
+    ._content 
+        +flex(row, left)
+        width: 100%
+
+        ._project
+            +grid-col(1fr 350px, end)
+            width: 100%
+            margin: 0 50px
+
+            ._information
+                margin-right: 50px
+                width: max-content
+                height: 500px
+                +font-pick($sea, 22px, black)
+                padding: 50px 50px
+                h4 
+                    font-size: 35px
+                    color: #42D4AD
+
+                ul 
+                    li 
+                        margin: 20px
+
+                ._click 
+                    padding: 30px
+                    margin-top: 50px
+                    border: 1px solid #e7717d
+                    color: #e7717d
+
+        .repair-design
+            display: none
+        .theyallow
+            
+
+        img 
+            height: 500px
+            width: auto

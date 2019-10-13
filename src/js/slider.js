@@ -1,6 +1,6 @@
 const slider = () => {
     const button = document.querySelector('.education__header__slide_down');
-    const education = document.querySelector('.education__information');
+    const education = document.querySelector('.education__information__container');
     let up = true
 
     const handler = (e) => {
