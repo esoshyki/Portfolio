@@ -1,0 +1,41 @@
+section.education 
+    margin: 10px 0
+    border: 1px solid #42D4AD
+    overflow: hidden
+
+    .education__header
+        height: 70px
+        h3 
+            +font-pick($antaro, 20px, black)
+            float: left
+            margin-left: 20px
+            margin-right: 20px
+        div 
+            content: url('./assets/icons/drop-down-arrow.svg')
+            display: inline-block
+            width: 64px
+            height: auto
+            float: right
+            margin-right: 20px
+            &:hover
+                cursor: pointer
+                margin-top: 5px
+                margin-bottom: -5px
+                transition-duration: 0.4s
+
+    .education__information 
+        margin: 0 20px 20px 20px
+        margin-top: -300px
+
+        ._item 
+            +flex(column, center, baseline)
+            margin-bottom: 30px
+
+            ._institution
+                +font-pick($sea, 20px, #8ABA9A, 400)
+                user-select: none
+                margin-bottom: 10px
+
+            ._years 
+                +font-pick($sea, 20px, #42D4AD, 400)
+                user-select: none
