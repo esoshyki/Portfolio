@@ -1,0 +1,32 @@
+header
+    border: 1px solid #42D4AD
+    margin: 20px 0
+    height: 200px
+    img     
+        width: 150px
+        height: auto
+        float: left
+        margin: 10px 20px
+
+    div 
+        h1
+            +font-pick($antaro, 40px, black, 700)
+            cursor: pointer
+            user-select: none
+        
+        a 
+            width: 64px
+            height: auto
+            margin-right: 20px
+            &:hover
+                transform: rotate(360deg)
+                transition-duration: 0.5s
+
+        ._github
+            content: url('./assets/icons/github-logo.svg')
+        ._facebook
+            content: url('./assets/icons/facebook-logo.svg')
+        ._vk
+            content: url('./assets/icons/vk-logo.svg')
+        ._linkedin
+            content: url('./assets/icons/linkedin-logo.svg')
