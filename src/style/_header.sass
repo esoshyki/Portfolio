@@ -1,19 +1,27 @@
 header
     border: 1px solid #42D4AD
-    margin: 20px 0
+    margin: 10px 0
     height: 200px
+    padding: 0 20px
+    +mobile
+        +flex
     img     
         width: 150px
         height: auto
         float: left
         margin: 10px 20px
+        +mobile
+            display: none
+
 
     div.header__information
         h1
             +font-pick($antaro, 40px, black, 700)
             cursor: pointer
             user-select: none
-        
+            +mobile
+                line-height: 20px
+
         a 
             width: 64px
             height: auto
@@ -21,6 +29,8 @@ header
             &:hover
                 transform: rotate(360deg)
                 transition-duration: 0.5s
+            +mobile
+                width: 42px
 
         ._github
             content: url('./assets/icons/github-logo.svg')

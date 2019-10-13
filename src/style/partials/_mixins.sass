@@ -9,3 +9,16 @@
     grid-template-columns: $gt
     justify-content: $jc
     align-items: $ai
+
+=laptop()
+    @media (min-width: 600) and (max-width: 1024px)
+        @content
+
+=mobile()
+    @media (max-width: 600px)
+        @content
+
+=desktop()
+    @media (min-width: 1024px)
+        @content
+
