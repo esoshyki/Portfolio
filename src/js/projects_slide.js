@@ -3,8 +3,9 @@ import mobile_show_info from './mobile_show_info'
 const project_slide = () => {
     const theallow = document.querySelector('.theyallow');
     const repair = document.querySelector('.repair-design');
-    const theallow_img = document.querySelector('._image-link');
-    const repair_img = document.querySelector('._image-link');
+    const theallow_img = document.querySelector('._image-link_theyallow');
+    const repair_img = document.querySelector('._image-link_repair');
+    const link_repair = document.querySelector('._link-repair');
 
     let theallow_active = true
     let dx = 0
@@ -42,7 +43,10 @@ const project_slide = () => {
         const startX = event.touches[0].clientX
         let el;
         if (theallow_active) {
-            el = theallow
+            el = theallow_img
+        }
+        else {
+            el = repair_img
         }
 
         const move = (e) => {
@@ -56,13 +60,13 @@ const project_slide = () => {
                 if (theallow_active === true) {
                     theallow_active = false;
                     console.log('here')
-                    repair_img.addEventListener('touchstart', swipe, true);
+                    repair_img.addEventListener('touchstart', swipe);
                     theallow_img.removeEventListener('touchstart', swipe)
                     theallow_img.removeEventListener('touchmove', move)
                 }
                 else {
                     theallow_active = true
-                    theallow_img.addEventListener('touchstart', swipe, true);
+                    theallow_img.addEventListener('touchstart', swipe);
                     repair_img.removeEventListener('touchstart', swipe)
                     repair_img.removeEventListener('touchmove', move)
                 }
@@ -75,7 +79,8 @@ const project_slide = () => {
 
 
     theallow_img.addEventListener('touchstart', swipe, true);
-    
+    repair_img.addEventListener('touchstart', swipe, true);  
+
 
 }
 
