@@ -615,3 +615,29 @@ section.third {
         display: none;
     }
 }
+
+.buttons_change_view {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+.buttons_change_view button {
+    background: blue;
+    border: 1px solid black;
+    font-family: 'LucidaSans-Italic';
+    color: white;
+}
+
+.buttons_change_view button:hover {
+    cursor: pointer
+}
+
+.buttons_change_view button:visited {
+    text-decoration: none;
+}
+
+
+
