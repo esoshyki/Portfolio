@@ -1,0 +1,102 @@
+section.online-contol
+    margin-top: -350px
+    background: $bg-dark
+    +mobile
+        margin-top: 0
+    .online-contol__content
+        +flex
+
+        .online-contol__content__logo
+            margin-bottom: 25px
+
+        iframe
+            border: 1px solid yellowgreen
+            margin-bottom: 40px
+            +mobile
+                width: 90%
+                height: auto
+
+        .complited-projects__online-contol__rect
+            width: 55px
+            height: 2px
+            background: url('../../assets/online-control/gorizont.png')
+            margin-bottom: 20px
+
+        article
+            max-width: 800px
+            +font-pick($FuturaBook, 14px, #363636)
+            line-height: 25px
+            text-align: center
+            margin-bottom: 40px
+            +laptop
+                max-width: 600px
+            +mobile
+                max-width: 300px
+
+        form 
+            +flex
+            +font-pick($FuturaBook, 12px, #363636)
+
+            #form_point 
+                +grid-col(repeat(3, 1fr), 10px)
+                margin-bottom: 10px
+                +mobile 
+                    width: 90%
+                    display: flex
+                    flex-direction: column
+
+                div 
+                    +flex
+                    align-items: baseline
+                    +mobile 
+                        display: flex
+                        flex-direction: column
+
+                    label, input 
+                        +mobile 
+                            max-width: 350px
+                            min-width: 300px
+                            background: $bg-dark
+
+                    input 
+                        +mobile 
+                            margin-bottom: 40px
+                            line-height: 30px
+                            border: none
+                            border-bottom: 1px solid white
+
+                #agree_mobile 
+                    display: none
+                    +mobile
+                        max-width: 350px
+                        display: block
+                        margin-top: -10px
+
+                    input 
+                        +mobile
+                            display: inline-block
+                            line-height: 0
+                            margin: 0 10px
+                            width: 30px
+                            float: left
+                            min-width: 0
+
+                    label 
+                        font-size: 16px
+                        color: white
+                        margin-bottom: 30px
+                        min-width: 0
+
+
+                button 
+                    +bronze_button;
+                    +mobile 
+                        width: 90%
+                        display: block
+                        margin-top: 30px
+
+            #agree_desktop 
+                font-size: 16px
+                margin: 30px 0
+                +mobile 
+                    display: none

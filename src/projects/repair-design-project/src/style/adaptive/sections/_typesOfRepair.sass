@@ -1,0 +1,48 @@
+@import 'typesOfRepairCards'
+
+section.types-of-repair 
+    +flex
+    margin-top: -540px
+    color: black
+    padding-top: 600px
+    background: white
+    overflow: hidden
+    +cards
+    +laptop
+        margin-top: -500px
+        padding-top: 550px
+    +mobile 
+        margin-top: -25px
+        padding-top: 30px
+        +font-pick($FuturaBook, 12px, #959595)
+
+    .types-of-repair__cards__item
+        +mobile
+            max-width: 100vw
+
+    h3 
+        +font-pick($Yeserva, 20px, black)
+        +mobile 
+            margin-top: 100px
+    h3~img 
+        margin-bottom: 20px
+        
+
+        .types-of-repair__information 
+            margin-top: -400px
+
+        .types-of-repair__background 
+            height: 100%
+            position: relative
+            top: -100px
+            background-color: white
+
+        ul 
+            line-height: 20px
+
+        button 
+            +font-pick($Yeserva, 16px, white)
+
+        img#building 
+            +mobile 
+                display: none

@@ -1,0 +1,45 @@
+@import './partials/bg'
+@import './partials/fonts'
+@import './partials/mixins'
+@import './partials/buttons'
+@import './partials/colors'
+
+body
+    padding: 0
+    background: black
+    color: white
+    margin: 0
+    +mobile
+        width: 375px
+        margin: 0 auto
+        overflow-x: hidden
+
+    .change_mode_buttons 
+        position: fixed
+        +flex
+        width: 200px
+        left: calc( 100vw - 150px )
+        top: calc(100vh - 60px)
+        z-index: 5
+
+    div.container
+        max-width: 1440px
+        margin: 0 auto
+        +mobile
+            width: 100% 
+    
+        @import './sections/header'
+        @import './sections/advertising'
+        @import './sections/scrolldown'
+        @import './sections/complitedProjects'
+        @import './sections/onlineContol'
+        @import './sections/typesOfRepair'
+        @import './sections/leave-request'
+        @import './sections/wildest-fantasy'
+        @import './sections/designProject'
+        @import './sections/step-to-goal'
+        @import './sections/our-team'
+        @import './sections/our-clients'
+        @import './sections/any-questions'
+        @import './sections/location'
+        @import './sections/footer'

@@ -1,0 +1,39 @@
+=menu 
+    height: 85px
+    background: #131313
+    +font_pick($Futura, 12px, white)
+    
+    .content 
+        margin: 0 85px
+        height: 100%
+        +grid-col(1.2fr 5fr 2fr)
+        +laptop
+            +flex(row)
+
+
+        h1 
+            +font_pick($Futura, 12px, $bronze)
+            +laptop
+                display: none
+
+        nav 
+            +grid-col(repeat(6, 1fr))
+
+            a 
+                text-decoration: none
+                color: white
+            
+                &:first-child 
+                    color: $bronze 
+
+        .contacts 
+            +grid-col(1fr 1fr, )
+
+            p 
+                +laptop
+                    display: none
+
+            button 
+                +bronze_button
+                +laptop
+                    display: none

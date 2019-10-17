@@ -1,0 +1,30 @@
+@font-face 
+    font-family: 'FuturaDemiC'
+    src: url('../../assets/fonts/futurademic.otf') format('opentype') 
+@font-face
+    font-family: 'YeservaOne'
+    src: url('../../assets/fonts/YesevaOne-Regular_v2.otf') format('opentype')
+@font-face 
+    font-family: 'FuturaBookC'
+    src: url('../../assets/fonts/futurabookc.otf') format('opentype')
+@font-face 
+    font-family: 'Futura Medium'
+    src: url('../../assets/fonts/Futura Medium.otf') format('opentype')
+@font-face
+    font-family: 'ProximaNova-RegularCondensed'
+    src: url('../../assets/fonts/ProximaNovaCondensedRegular.otf') format('opentype')
+
+$Futura: 'FuturaDemiC' 
+$FuturaBook: 'FuturaBookC'
+$FuturaMedium: 'Futura Medium'
+$Yeserva: 'YeservaOne'
+$Proxima: 'ProximaNova-RegularCondensed'
+
+=font_pick($fm: 'FuturaDemiC', $fs: 12px, $fc: white, $fw: 100) 
+    font-family: $fm
+    font-size: $fs
+    font-weight: $fw
+    color: $fc
+
+=h3font
+    font_pick($Yeserva, 22px, $bronze) 

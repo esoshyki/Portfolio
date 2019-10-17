@@ -1,0 +1,45 @@
+section.location 
+    margin-top: -195px
+    background: url('../../assets/location/bg.png')
+    +mobile 
+
+    .location__content 
+        background: url('../../assets/location/bg_.png')
+        width: 100%
+        padding-top: 195px
+        padding-bottom: 40px
+        +flex
+        +mobile
+            img
+                max-width: 100vw
+
+    .location__mobile-map 
+        display: none
+        +mobile 
+            display: block
+            margin-top: 20px
+
+    h3, a 
+        +font_pick($Yeserva, 22px, $bronze , )
+        text-decoration: none
+        max-width: 80%
+        text-align: center
+            
+    .location__links 
+        margin-bottom: 20px;  
+                
+        .location__icon_desktop 
+            +mobile 
+                display: none
+
+        .location__icon_mobile 
+            display: none
+            +mobile 
+                display: inline-block
+                margin: 0 20px
+
+    .location__desktop-map
+            +laptop
+                display: none
+            +mobile 
+                display: none    

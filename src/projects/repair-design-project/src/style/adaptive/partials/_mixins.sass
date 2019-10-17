@@ -1,0 +1,19 @@
+=grid-col($gc: 1fr, $gg: 30px, $ai: center, $jc: center)
+    display: grid
+    grid-template-columns: $gc
+    grid-gap: $gg
+    justify-content: $jc
+    align-items: $ai
+
+=mobile
+    @content
+
+=laptop
+    @media (max-width: 1050px) and (min-width: 650px) 
+        @content
+
+=flex($fd: column, $jc: center, $ai: center)
+    display: flex
+    flex-direction: $fd
+    justify-content: $jc
+    align-items: $ai

@@ -1,0 +1,61 @@
+section.leave-request
+    background: white
+    +grid-col(730px auto, $jc: space-around)
+    +laptop
+        display: block
+        background: $bg-dark
+    +mobile
+        display: none
+        
+    .leave-request__left-part
+        +laptop
+            display: none
+    .leave-requset__form
+        form
+            background: $bg-dark
+            padding: 20px
+            width: 490px
+            +flex
+            +laptop
+                margin: 0 auto
+            h5
+                +font-pick($Futura, 18px, white)
+
+            .leave-requset__form_line
+                width: 90%
+                +flex
+                margin-bottom: 30px
+                label
+                    +font-pick($FuturaBook, 14px)
+                    opacity: 0.5
+                    align-self: baseline
+                input[type='text'], input[type='email']
+                    background: $bg-dark
+                    border: 0
+                    border-bottom: 1px solid gray
+                    +font-pick($FuturaMedium, 14px)
+                    width: 100%
+                    &::placeholder
+                        color: white
+            input[type='checkbox']
+                    float: left
+            
+            .leave-requset__form_line__checkbox
+                label
+                    +font-pick($FuturaBook, 14px)
+                input
+                    background: $bronze
+
+            button
+                margin-top: 20px
+                +bronze_button    
+
+        .leave-requset__form_bottom
+            +flex(row, flex-start, center)
+            img 
+                margin-left: 40px
+                float: left
+
+            p 
+                +font-pick($Futura, 18px, $bronze)
+                margin-top: -15px

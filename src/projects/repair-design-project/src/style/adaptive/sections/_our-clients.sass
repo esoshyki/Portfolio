@@ -1,0 +1,60 @@
+section.our-clients 
+    +flex
+    background: white
+    color: black
+    margin-top: -450px
+    padding-top: 500px
+    padding-bottom: 400px
+    +laptop 
+        display: none
+    +mobile 
+        display: none
+
+    h3 
+        +h3font
+        color: black
+
+    p 
+        +font-pick($FuturaBook, 16px, #363636, 100)
+        text-align: center
+            
+    .our-clients__cards 
+        +grid-col(repeat(3, 1fr), 20px, top )
+        max-width: 1240px
+
+        img 
+            border-radius: 40px
+            margin-right: 20px
+
+        .our-clients__cards__card 
+            padding: 10px 20px
+            margin: 10px 10px
+
+            h4 
+                +font-pick($Yeserva, 18px, black)
+                line-height: 15px
+
+            article
+                +font-pick($FuturaBook, 14px, #959595, 100)
+                line-height: 30px
+
+            div:first-child 
+                display: flex
+                flex-direction: row
+                margin-bottom: 10px
+
+            .our-clients__cards__card__bottom 
+                background: $bronze
+                color: white
+                +grid-col(1fr 1fr, 0 ,top )
+                margin-top: 20px
+                margin-left: -20px
+
+                div 
+                    display: inline
+                    text-align: center
+                    padding: 10px 20px
+                    font-size: 20px
+
+                img 
+                    border-radius: 0

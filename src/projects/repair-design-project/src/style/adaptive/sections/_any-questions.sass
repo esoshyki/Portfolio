@@ -1,0 +1,96 @@
+section.any-questions
+    position: relative
+    width: 885px
+    margin: -190px auto 0 auto
+    background: $bg-dark
+    z-index: 1
+
+    +flex 
+    +laptop 
+        width: 90vw
+    +mobile 
+        margin-top: 0px
+        padding-top: 30px
+        padding: 0 20px
+        width: auto
+    h3 
+        +h3font
+        margin-bottom: 40px
+        +mobile 
+            margin-top: 30px
+
+    form 
+        +flex
+        width: 520px
+        +mobile 
+            width: auto
+
+        label 
+            +font-pick($FuturaBook, 18px, white)
+            opacity: 0.5
+
+        input 
+            background: $bg-dark
+            border: none
+            border-bottom: 1px solid gray
+            height: 30px
+            &::-webkit-input-placeholder 
+                color: white
+            &::-moz-placeholder 
+                color: white
+            &:-moz-placeholder
+                color: white
+            &:-ms-input-placeholder
+                color: white
+
+        ._form-grid
+            width: 100%
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            grid-gap: 20px
+            +mobile 
+                +flex
+                padding: 0 30px
+                width: 90%
+
+            div 
+                +flex
+                align-items: baseline
+                margin-bottom: 20px
+                +mobile 
+                width: 100%
+
+                input
+                    width: 100%
+
+            div:nth-child(2)
+                grid-column: 2
+                grid-row: 1
+
+            div:nth-child(3)
+                width: 100%
+                grid-row: 2
+                grid-column-start: 1
+                grid-column-end: 3
+
+                input
+                    width: 100%
+
+        ._agree 
+            +flex
+            flex-direction: row
+            margin-bottom: 20px
+
+            input
+                margin-right: 20px
+
+            label._agree_label 
+                +font-pick($FuturaBook, 18px, white)
+                opacity: 1
+
+        button 
+            +bronze_button
+            margin-bottom: 30px
+            height: 50px
+            width: 200px

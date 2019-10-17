@@ -1,0 +1,16 @@
+.slider-down 
+    position: relative
+    top: -50px
+    height: 60px
+    width: 250px
+    background: $bg-dark
+    padding: 15px 0
+    +flex(row)
+    z-index: 1
+    &::after
+        content: url('../../assets/scroll_down.svg')
+        margin-left: 20px
+            
+    +mobile 
+        display: none
+        

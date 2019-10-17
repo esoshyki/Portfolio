@@ -1,0 +1,70 @@
+section.design-project 
+    background: white
+    margin-top: -20px
+    color: #363636
+    +flex
+    padding-top: 60px
+    +laptop 
+        background: $bg-dark
+    +mobile 
+        background: $bg-dark
+        margin-top: -150px
+        padding-top: 150px
+
+    h3 
+        +h3font
+        +laptop 
+            color: white
+        +mobile 
+            color: white
+
+    p 
+        width: 800px
+        padding: 0 20px
+        text-align: center
+        margin-bottom: 20px
+        +font-pick($FuturaBook, 18px, #363636)
+        +laptop 
+            color: white
+        +mobile 
+            color: white
+            width: 70%
+
+    .cards
+        +grid-col(repeat(3, 1fr), 10px, top, center)
+        height: 450px
+        +laptop
+            +flex
+            height: auto
+        +mobile
+            +flex
+            height: auto
+
+        ._card 
+            margin-bottom: -50px
+
+            img 
+                max-width: 100vw
+
+        ._info
+            position: relative
+            top: -150px
+            background: white
+            width: 260px
+            margin: 0 auto
+            padding: 20px 20px 0px 0px
+            
+            h4 
+                +font-pick($Yeserva, 18px, #363636)
+                text-align: center
+                margin-top: 20px
+
+            ul 
+                padding-left: 30px
+                +font-pick($FuturaBook, 14px, #959595)
+                
+                li 
+                    line-height: 30px
+
+            button 
+                +bronze_button

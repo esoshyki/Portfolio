@@ -1,0 +1,70 @@
+section.step-to-goal
+    background: $bg-dark
+    margin-top: -400px
+    padding-top: 250px
+    +grid-col(1fr 2fr, 20px)
+    +laptop
+        display: none
+    +mobile 
+        display: none
+    
+    .step-to-goal__left 
+        margin-top: 300px
+        padding-left: 100px
+
+        h5 
+            +font-pick($Futura, 14px, white)
+
+        h3 
+            +font-pick($Yeserva, 20px, $bronze)
+
+        #current 
+            +font-pick($Yeserva, 18px, white)
+
+        h6 
+            +font-pick($Yeserva, 14px, $bronze)
+
+        p 
+            +font-pick($FuturaBook, 12px, white, 100)
+            max-width: 300px
+            padding-right: 40px
+            line-height: 20px
+
+        img 
+            margin-top: 20px
+
+    .step-to-goal__right 
+        margin-top: 400px
+        +flex
+
+        .step-to-goal__right__grid 
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            grid-gap: 30px
+            margin-top: 100px
+
+            div
+                color: white
+                opacity: 0.5
+                &[status='focused']
+                    opacity: 1
+
+            span 
+                +font-pick($Yeserva, 18px, white)
+
+                &::after 
+                    position: relative
+                    top: 10px
+                    left: -17px
+                    content: url('../../assets/step-to-goal/underline.png')
+
+            p 
+                +font-pick($FuturaBook, 14px, white)
+
+        img 
+            margin-top: 30px
+
+        h4 
+            +h3font
+            font-size: 14px

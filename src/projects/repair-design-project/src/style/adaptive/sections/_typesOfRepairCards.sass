@@ -1,0 +1,28 @@
+=cards
+    .cards 
+        max-width: 1240px
+        +grid-col(1fr 1fr 1fr, 20px, top)
+        margin-top: 20px
+        +laptop
+            +flex
+        +mobile 
+            +flex
+
+    img ~ div 
+        width: 330px
+        background: white
+        overflow: visible
+        padding: 10px
+        z-index: 1
+
+    button 
+        +bronze_button
+
+
+    h4 
+       +font-pick($Yeserva, 14px, black)
+
+    ul 
+        +font-pick($FuturaBook, 14px, #959595)
+        line-height: 20px
+    

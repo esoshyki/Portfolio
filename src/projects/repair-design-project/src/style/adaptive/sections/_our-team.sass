@@ -1,0 +1,66 @@
+section.our-team
+    background: $bg-dark
+    padding-top: 50px
+    +flex
+    h3 
+        +h3font
+    +mobile
+        padding-top: 0
+    p 
+        +font-pick($FuturaBook, 20px, #ffffff)
+        max-width: 480px
+        text-align: center
+        padding: 0 30px
+
+    .our-team__cards
+        margin-top: 40px
+        +grid-col(repeat(3, 1fr))
+        padding: 0
+        +laptop 
+            +flex
+        +mobile 
+            +flex
+
+        .our-team__cards__card
+            padding: 0
+            width: 320px
+
+            .our-team__cards__card__info
+                +flex
+
+                div:not(.yellow)
+                    margin-top: -100px
+                    +flex
+                    width: 239px
+                    background: white
+
+                    h4 
+                        +font-pick($Yeserva, 20px, #181818)
+                        margin-bottom: 0
+
+                    p 
+                        +font-pick($FuturaBook, 18px, #959595)
+
+                    div 
+                        background: $bronze
+                        padding: 0 20px
+                        p
+                            color: white
+                            +font-pick($Yeserva, 13px, white)
+
+            .corner 
+                position: relative
+                top: -450px
+                left: -30px
+
+    article 
+        margin-top: 30px
+        max-width: 560px
+        text-align: center
+        +font-pick($FuturaBook, 22px, #363636)
+        line-height: 30px
+        padding: 0 30px
+        
+        
+
+                

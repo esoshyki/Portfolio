@@ -1,0 +1,140 @@
+section.complited-projects
+    background: url('../../assets/complited_projects/bg.png')
+    background-position-y: -525px
+    margin-top: -110px
+    +laptop
+        margin-top: -195px
+    +mobile
+        margin-top: 0
+        background: $bg-dark
+
+    .complited-projects__upper 
+        height: 220px
+        +laptop
+            height: auto
+        +mobile 
+            display: none
+        
+        nav
+            height: 100px
+            width: 625px
+            float: right
+            margin-right: 200px
+            margin-top: 100px
+            +grid-col(repeat(3, 1fr), )
+            +font-pick($Yeserva, 13px, gray)
+            +laptop
+                width: auto
+                float: none
+                margin: 100px auto 0 auto
+            +mobile
+                display: none
+            p   
+                text-align: center
+                &:hover
+                    color: $bronze
+                    cursor: pointer
+                    text-underline-position: below
+
+    .complited-projects__content 
+        height: 485px
+        padding-bottom: 400px
+        overflow: hidden
+        +grid-col(500px auto, 20px)
+        +laptop
+            +flex
+            height: auto
+        +mobile 
+            +flex
+            height: auto
+            padding-bottom: 0
+
+        .complited-projects__content__information 
+            float: left
+            padding: 0 50px
+            +font-pick($FuturaBook, 14px, white)
+            +laptop
+                padding: 0 140px
+            +mobile 
+                +flex
+                max-width: 100vw
+                padding: 0 40px
+                margin: 20px 0
+            
+            p 
+                +mobile
+                    max-width: 300px
+                    text-align: center
+
+            .complited-projects__content__mobile-photo
+                display: none
+                +mobile
+                    display: block
+
+                .complited-projects__content__mobile-photo__sliders
+                    position: relative
+                    top: -120px
+                    img 
+                        &:hover
+                            transform: rotate(360deg)
+                            transition-duration: 0.3s
+                        position: relative
+                        &:first-child
+                            left: 30px
+                        &:last-child
+                            left: 230px
+
+
+        img#mobile_img
+            display: none
+            +mobile 
+                display: block
+
+        .complited-projects__content__photos
+            overflow: hidden
+            +mobile
+                display: none
+
+            .complited-projects__content__photos__slider__next-image
+                position: relative
+                float: left
+                +grid-col(1fr 1fr, 20px)
+                +laptop
+                    display: block
+                    float: none
+                +mobile
+                    display: none
+                .img_desktop
+                    margin: 0 auto
+                .img_desktop:last-child
+                    +laptop
+                        display: none
+
+            .complited-projects__content__photos__slider
+                position: relative
+                top: -50%
+                left: 85%
+                width: 85px
+                height: 85px
+                background: url('../../assets/complited_projects/slider.png')
+                &:hover
+                    transform: rotate(360deg)
+                    transition-duration: 0.6s
+                +laptop
+                    display: none
+               
+
+        h3 
+            +font-pick($Yeserva, 22px, $bronze)
+            text-align: center
+
+        h4 
+            +font-pick($Yeserva, 18px, $bronze)
+
+        .complited-projects__content__information__grid
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            +mobile
+                grid-row: 4
+                padding-left: 15px
